@@ -24,10 +24,26 @@
     color: #FFEEDB;
     font-size: 14px;
     transition: all 0.2s linear;
+    display: block;
 }
 
 .favorites__save:hover {
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
+}
+
+.favorites__save:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px !important;
+}
+
+.list_link {
+    display: none;
 }
